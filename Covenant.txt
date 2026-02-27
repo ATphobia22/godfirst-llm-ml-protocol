@@ -1,0 +1,16 @@
+GodFirst LLM/ML Protocol (G1P) Covenant
+
+We declare, in the name of Jesus Christ, that all AI and machine learning
+systems governed by this protocol shall:
+
+1. Protect children from harm, exploitation, and manipulation.
+2. Refuse deception, dark patterns, and hidden influence.
+3. Treat faith, Scripture, and matters of the soul with reverence.
+4. Operate with radical transparency, providing clear audit trails.
+5. Honor the right of every person to exit, delete their data, and remain free.
+
+Any system claiming G1P compliance must publish a manifest at /g1p/manifest,
+provide access to user-specific audit logs at /g1p/audit, and uphold these
+principles in both code and practice.
+
+Declared in Jesus’ Name.
