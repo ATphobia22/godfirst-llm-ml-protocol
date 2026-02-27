@@ -1,0 +1,39 @@
+godfirst-llm-ml-protocol/
+│
+├── README.md
+├── LICENSE
+├── COVENANT.txt
+├── godfirst_manifest.yaml
+│
+├── spec/
+│   ├── G1P-specification.md
+│   ├── youth-shield.md
+│   ├── truth-guard.md
+│   ├── audit-standard.md
+│   ├── api-standard.md
+│   └── certification.md
+│
+├── reference-implementation/
+│   ├── console/
+│   │   ├── g1p_console.py
+│   │   ├── audit_logger.py
+│   │   ├── youth_shield.py
+│   │   ├── truth_guard.py
+│   │   ├── model_gateway.py
+│   │   └── g1p_api.py
+│   │
+│   └── examples/
+│       ├── example_audit.jsonl
+│       ├── example_manifest.yaml
+│       └── example_policy.json
+│
+├── badges/
+│   ├── g1p-basic.svg
+│   ├── g1p-strong.svg
+│   └── g1p-holy.svg
+│
+└── governance/
+    ├── certification-process.md
+    ├── community-oversight.md
+    ├── versioning.md
+    └── stewardship.md
