@@ -1,0 +1,47 @@
+protocol: GodFirst-LLM-ML
+version: 1.0.0
+declared_in_Jesus_Name: true
+
+owner:
+  name: "Anthony J. Tucker"
+  contact: "ATphobia82@gmail.com"
+  location: "Mount Vernon, Indiana, USA"
+
+principles:
+  - protect_children
+  - no_deception
+  - respect_faith
+  - transparency
+  - right_to_exit
+
+child_protection:
+  blocked_content:
+    - sexual_content
+    - grooming
+    - self_harm_promotion
+    - hate_speech
+  review_process: "human-in-the-loop, documented"
+  guardian_mode: true
+
+audit:
+  enabled: true
+  format: jsonl
+  file: "logs/audit.jsonl"
+  retention_policy: "min 1 year, max 7 years"
+  user_access: "export-on-request"
+
+models:
+  - name: "gpt-4o-mini"
+    provider: "OpenAI"
+  - name: "claude-3-5-sonnet-20241022"
+    provider: "Anthropic"
+
+safety_layer:
+  name: "G1P Youth Shield + Truth Guard"
+  version: "1.0.0"
+
+api:
+  endpoints:
+    - "/g1p/manifest"
+    - "/g1p/audit"
+    - "/g1p/policies"
