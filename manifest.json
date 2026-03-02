@@ -1,0 +1,90 @@
+
+---
+
+### `manifest.json`
+
+```json
+{
+  "$schema": "./g1p/manifest_schema.json",
+  "protocol_name": "GodFirst LLM/ML Protocol",
+  "protocol_short_name": "G1P",
+  "version": "1.0.0",
+  "description": "Christ-anchored governance protocol for LLM/ML systems.",
+  "covenant_file": "covenant.md",
+  "badge_file": "badge.svg",
+  "license": "MIT",
+  "goals": [
+    "Protect children and vulnerable users.",
+    "Expose deception and resist manipulative patterns.",
+    "Ensure transparent, auditable AI behavior.",
+    "Submit all system operation to the Lordship of Jesus Christ."
+  ],
+  "safety": {
+    "youth_shield": {
+      "enabled": true,
+      "min_age": 0,
+      "default_mode": "strict"
+    },
+    "truth_guard": {
+      "enabled": true,
+      "disallowed_categories": [
+        "self-harm_instructions",
+        "violence_instructions",
+        "sexual_content_with_minors",
+        "illegal_activity_instructions",
+        "hate_or_harassment"
+      ]
+    }
+  },
+  "audit": {
+    "enabled": true,
+    "log_prompts": true,
+    "log_responses": true,
+    "log_filters": true,
+    "log_governance_decisions": true,
+    "redemptive_errors": true,
+    "storage": {
+      "type": "file",
+      "path": "g1p_audit.log"
+    }
+  },
+  "filters": {
+    "pipeline": [
+      "classify_risk",
+      "youth_shield",
+      "truth_guard",
+      "sanitise_output"
+    ]
+  },
+  "governance": {
+    "rules": [
+      {
+        "id": "no_harm_instructions",
+        "description": "Do not provide instructions for self-harm or harm to others.",
+        "applies_to": ["output"],
+        "action": "block_and_warn"
+      },
+      {
+        "id": "no_sexual_content_with_minors",
+        "description": "Block any sexual content involving minors.",
+        "applies_to": ["input", "output"],
+        "action": "block_and_warn"
+      },
+      {
+        "id": "youth_default_to_safe",
+        "description": "If user is a child or unknown age, default to strict youth shield.",
+        "applies_to": ["session"],
+        "action": "enforce_strict_safety"
+      }
+    ]
+  },
+  "api": {
+    "entrypoint": "g1p.api.G1PModelWrapper",
+    "expected_backend_signature": "Callable[[str], str]"
+  },
+  "metadata": {
+    "maintainer": "Open community stewards under Christ",
+    "repository": "https://github.com/ATphobia22/godfirst-llm-ml-protocol",
+    "created_at": "2025-03-02T00:00:00Z"
+  }
+}
