@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="28" role="img" aria-label="GodFirst: G1P">
+  <linearGradient id="bg" x2="0" y2="100%">
+    <stop offset="0" stop-color="#444" stop-opacity=".9"/>
+    <stop offset="1" stop-color="#222" stop-opacity=".9"/>
+  </linearGradient>
+  <rect rx="4" width="150" height="28" fill="url(#bg)"/>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana, DejaVu Sans, sans-serif" font-size="12">
+    <text x="40" y="19">GodFirst</text>
+    <text x="115" y="19">G1P</text>
+  </g>
+</svg>
